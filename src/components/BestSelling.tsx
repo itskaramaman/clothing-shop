@@ -7,7 +7,7 @@ const BestSelling = () => {
       <div className="text-center font-semibold text-2xl mb-5">
         <h1>BestSelling</h1>
       </div>
-      <div className="flex flex-wrap justify-between w-9/12 mx-auto">
+      <div className="space-y-8 md:flex md:flex-wrap md:justify-between md:w-10/12 lg:w-9/12 mx-auto">
         <ClothCard />
         <ClothCard />
         <ClothCard />
