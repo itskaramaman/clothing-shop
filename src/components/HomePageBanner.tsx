@@ -1,4 +1,5 @@
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
+import Link from "next/link";
 import {
   ArrowRight,
   TruckIcon,
@@ -8,7 +9,6 @@ import {
 import Image from "next/image";
 import BestSelling from "./BestSelling";
 import FashionParadiseBanner from "./FashionParadiseBanner";
-import Newsletter from "./Newsletter";
 
 const HomePageBanner = () => {
   return (
@@ -19,9 +19,12 @@ const HomePageBanner = () => {
           <p className="text-xs md:text-sm text-gray-600">
             Discover our Newest Collection Today
           </p>
-          <Button>
+          <Link
+            className={buttonVariants({ variant: "default" })}
+            href="/listings"
+          >
             View Collection <ArrowRight />
-          </Button>
+          </Link>
         </div>
 
         <div className="md:bg-gray-100 h-40 w-32 md:h-96 md:w-96 rounded-full relative">
@@ -63,7 +66,6 @@ const HomePageBanner = () => {
       </section>
       <BestSelling />
       <FashionParadiseBanner />
-      <Newsletter />
     </main>
   );
 };

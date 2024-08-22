@@ -7,10 +7,25 @@ const BestSelling = () => {
       <div className="text-center font-semibold text-2xl mb-5">
         <h1>BestSelling</h1>
       </div>
-      <div className="space-y-8 md:flex md:flex-wrap md:justify-between md:w-10/12 lg:w-9/12 mx-auto">
-        <ClothCard />
-        <ClothCard />
-        <ClothCard />
+      <div className="mt-8 md:flex md:flex-wrap md:justify-between md:w-10/12 mx-auto">
+        <ClothCard
+          badge="In Stock"
+          price={35}
+          title="Classic Monochrome Tees"
+          imgSrc="/images/listing-image.png"
+        />
+        <ClothCard
+          badge="In Stock"
+          price={35}
+          title="Classic Monochrome Tees"
+          imgSrc="/images/listing-image.png"
+        />
+        <ClothCard
+          badge="In Stock"
+          price={35}
+          title="Classic Monochrome Tees"
+          imgSrc="/images/listing-image.png"
+        />
       </div>
     </main>
   );

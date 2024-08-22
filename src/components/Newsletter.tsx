@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 const Newsletter = () => {
   return (
-    <main className="flex justify-between items-center p-8 md:px-24 md:py-12 lg:px-32 lg:py-16">
+    <main className="flex border justify-between items-center p-8 md:px-24 md:py-12 lg:px-32 lg:py-16">
       <div className="space-y-4">
         <h1 className="font-semibold  md:text-2xl lg:text-3xl">
           Join Our Newsletter
