@@ -33,11 +33,11 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="flex gap-3 items-center">
-        <div className="flex items-center gap-1 border border-gray-600 rounded-sm p-2">
+        <div className="flex items-center gap-1 border border-gray-600 rounded-sm p-2 sm:w-60 lg:w-96">
           <Search className="w-5" />
           <input
             type="text"
-            className="focus:border-none"
+            className="focus:outline-none text-sm w-full"
             placeholder="Search products"
           />
         </div>

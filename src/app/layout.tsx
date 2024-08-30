@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
+import QueryProvider from "@/components/QueryProvider";
+import NextAuthSessionProvider from "@/components/NextAuthSessionProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,10 +22,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
-        {children}
-        <Newsletter />
-        <Footer />
+        <QueryProvider>
+          <NextAuthSessionProvider>
+            <Navbar />
+            {children}
+            <Newsletter />
+            <Footer />
+          </NextAuthSessionProvider>
+        </QueryProvider>
       </body>
     </html>
   );

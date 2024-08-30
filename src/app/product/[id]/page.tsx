@@ -26,8 +26,8 @@ The classic black color never goes out of style. Whether you're dressing up for 
 
   return (
     <main className="w-11/12 mx-auto">
-      <section className="flex gap-10 p-20">
-        <div className="bg-gray-100 w-4/12">
+      <section className="sm:flex gap-10 p-4 sm:p-6 md:p-12 lg:p-20">
+        <div className="bg-gray-100 sm:w-6/12 md:w-6/12 lg:w-5/12">
           <Image
             src="/images/listing-image.png"
             width={100}
@@ -36,8 +36,8 @@ The classic black color never goes out of style. Whether you're dressing up for 
             className="w-11/12 mx-auto"
           />
         </div>
-        <div className="w-8/12 space-y-2">
-          <h1 className="font-semibold text-2xl">{title}</h1>
+        <div className="sm:w-6/12 md:w-6/12 lg:w-7/12 space-y-2">
+          <h1 className="font-semibold sm:text-xl md:text-2xl">{title}</h1>
           <div className="flex items-center gap-2">
             <Badge variant="outline">{reviews}</Badge>
             <Badge variant="outline">{badge}</Badge>
@@ -94,26 +94,28 @@ The classic black color never goes out of style. Whether you're dressing up for 
         </div>
       </section>
 
-      <section className="flex gap-10 justify-between p-20 items-center">
-        <div className="w-4/12 space-y-2 text-center">
-          <h3 className="text-gray-600 flex items-center gap-1 cursor-pointer">
-            <BsThreeDots />
-            Details
-          </h3>
-          <h3 className="text-gray-600 flex items-center gap-1 cursor-pointer">
-            <FaRegStar />
-            Reviews
-          </h3>
+      <section className="sm:flex gap-10 justify-between p-4 sm:p-6 md:p-12 lg:p-20 items-center">
+        <div className="sm:w-4/12 space-y-2 sm:flex justify-center items-center">
+          <div className="flex gap-2 justify-center mb-1 sm:block">
+            <h3 className="text-gray-600 sm:text-sm flex items-center gap-1 cursor-pointer">
+              <BsThreeDots />
+              Details
+            </h3>
+            <h3 className="text-gray-600 sm:text-sm flex items-center gap-1 cursor-pointer">
+              <FaRegStar />
+              Reviews
+            </h3>
+          </div>
         </div>
-        <div className="w-8/12">
-          <h3 className="text-gray-600">{description}</h3>
+        <div className="sm:w-8/12">
+          <h3 className="text-gray-600 text-xs sm:text-sm">{description}</h3>
         </div>
       </section>
 
-      <section className="p-20">
+      <section className="p-4 sm:p-6 md:p-12 lg:p-20">
         <h1 className="font-semibold text-2xl">You might also like</h1>
         <p className="text-gray-600">Similar products</p>
-        <div className="flex justify-between">
+        <div className="md:flex flex-wrap justify-between">
           <Link className="mb-12" href="/">
             <ClothCard
               badge="In Stock"
